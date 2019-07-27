@@ -26,12 +26,6 @@ It demonstrates the following:
 
 ## Prerequisites
 
-### Setup a Trial with the Approov API Protection Solution
-
-Approov is an API Protection Solution.
-
-For setting up a trial see <https://approov.io/.>
-
 ### Create Serverless Project
 
 * Install Serverless.
