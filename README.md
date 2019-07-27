@@ -2,9 +2,17 @@
 
 Demonstrates the usage of Approov 2.0 in a Flutter mobile app together with a GCP cloud function backend.
 
+The Approov SDK provides security for mobile applications as described at <https://approov.io/docs/v2.0/>.
+
 ## Prerequisites
 
-The mobile app APK needs to have been registered in the Approov cloud service.
+### Setup a Trial with the Approov API Protection Solution
+
+For setting up a trial see <https://approov.io/>.
+
+### Register APK with the Approov Service
+
+The mobile app APK needs to have been registered with the Approov service.
 Otherwise, the Approov service will not return valid tokens.
 
 ## Approov Message Flow Diagram
