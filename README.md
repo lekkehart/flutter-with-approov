@@ -27,15 +27,12 @@ The message flow is the following:
 1. Mobile app requests a token from Approov cloud service.
 1. Approov will return a valid token if and only if it finds that the mobile app APK has been registered properly with the Approov service.
 1. The mobile app sends a request to the mobile backend.
-It adds the previously received Approov token as a header.
+   It adds the previously received Approov token as a header.
 1. The mobile backend checks the Approov token.
-
-  * Checks the token signature.
-    It can do that because the mobile backend knows the Approov Secret that was used for signing.
-    It knows it because it has been configured with an encrypted environment variable (using Google Cloud KMS) holding the Approov Secret.
-  
- * Checks that the token has not expired.
-
+   1. Checks the token signature.
+      It can do that because the mobile backend knows the Approov Secret that was used for signing.
+      It knows it because it has been configured with an encrypted environment variable (using Google Cloud KMS) holding the Approov Secret.
+   1. Checks that the token has not expired.
 1. The mobile backend forwards the request to the Currency Converter API which in turn requires an API key.
 That API key is added by the mobile backend.
 It can do that because it has been configured with an encrypted environment variable (using Google Cloud KMS) holding the API key.
